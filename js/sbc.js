@@ -19,39 +19,39 @@ function playpause(n) {
 
 function switchlang(d,l) {
   en = document.getElementsByClassName("en");
-  sw = document.getElementsByClassName("sw");
+  fr = document.getElementsByClassName("fr");
   def = document.getElementsByClassName("def");
   btn_en = document.getElementsByClassName("lang-en");
-  btn_sw = document.getElementsByClassName("lang-sw");
+  btn_fr = document.getElementsByClassName("lang-fr");
   if (l == "en") {
     for (var i = 0; i < btn_en.length + 1; i++) {
-      sw[i].style.display = "none";
+      fr[i].style.display = "none";
       en[i].style.display = "block";
       def[i].style.display = "none";
       btn_en[i].innerHTML = d;
-      btn_sw[i].innerHTML = "sw";
+      btn_fr[i].innerHTML = "fr";
       btn_en[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','sw')");
+      btn_fr[i].setAttribute("onclick", "switchlang('" + d + "','fr')");
     }
-  } else if (l == "sw") {
-    for (var i = 0; i < btn_sw.length + 1; i++) {
+  } else if (l == "fr") {
+    for (var i = 0; i < btn_fr.length + 1; i++) {
       en[i].style.display = "none";
-      sw[i].style.display = "block";
+      fr[i].style.display = "block";
       def[i].style.display = "none";
       btn_en[i].innerHTML = "en";
-      btn_sw[i].innerHTML = d;
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
+      btn_fr[i].innerHTML = d;
+      btn_fr[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
       btn_en[i].setAttribute("onclick", "switchlang('" + d + "','en')");
     }
   } else if (l == d) {
-    for (var i = 0; i < btn_sw.length + 1; i++) {
+    for (var i = 0; i < btn_fr.length + 1; i++) {
       en[i].style.display = "none";
-      sw[i].style.display = "none";
+      fr[i].style.display = "none";
       def[i].style.display = "block";
       btn_en[i].innerHTML = "en";
-      btn_sw[i].innerHTML = "sw";
+      btn_fr[i].innerHTML = "fr";
       btn_en[i].setAttribute("onclick", "switchlang('" + d + "','en')");
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','sw')");
+      btn_fr[i].setAttribute("onclick", "switchlang('" + d + "','fr')");
     }
   }
 }
