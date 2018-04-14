@@ -56,26 +56,30 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Kam dadua</span>
-<span class="en">A very tall man</span>
-<span class="fr">Un homme très grand</span>
+			<span class="l1"></span>
+			<span class="l2"></span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/kr/0001/mp3/01.mp3"></audio>
+				<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+				<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by" width="38px"></span> Cornelius Gulere</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by" width="38px"></span> Catherine Groenewald</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-nigeria/stories/kr">Kanuri</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-nigeria/stories/kr/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/kr/0001/0001.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/kr/0001/kr-0001_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Banonju jauro kori.
 	</h3></div>
 
@@ -94,8 +98,8 @@ courte.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -104,7 +108,8 @@ courte.
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Ci ngimnjuye jauro cidiyan.
 	</h3></div>
 
@@ -123,8 +128,8 @@ trop basse.
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -133,7 +138,8 @@ trop basse.
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Dǝgǝlnju jauro kori.
 	</h3></div>
 
@@ -151,8 +157,8 @@ trop basse.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -161,7 +167,8 @@ trop basse.
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Belonju jauro gana.
 	</h3></div>
 
@@ -180,8 +187,8 @@ petite.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -190,7 +197,8 @@ petite.
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Kam adǝ dadua.
 	</h3></div>
 
@@ -209,8 +217,8 @@ grand.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -219,7 +227,8 @@ grand.
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Banonjuro ka kuruwu kikkaro.
 	</h3></div>
 
@@ -238,8 +247,8 @@ manche pour sa houe.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -248,7 +257,8 @@ manche pour sa houe.
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Ciya ngimnjuye kurajiyi.
 	</h3></div>
 
@@ -266,8 +276,8 @@ manche pour sa houe.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -276,7 +286,8 @@ manche pour sa houe.
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Dǝgǝl jauro kura cǝtandiǝ.
 	</h3></div>
 
@@ -295,8 +306,8 @@ lit.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -305,7 +316,8 @@ lit.
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Belo dadua ciwo.
 	</h3></div>
 
@@ -324,8 +336,8 @@ très haute.
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -334,7 +346,8 @@ très haute.
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Kǝla kuris daduayen napce, furshet
 kuran masǝna kido.
 	</h3></div>
@@ -356,8 +369,8 @@ fourchette.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -366,7 +379,8 @@ fourchette.
 
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Fanju kolje, leje curo dǝrren saa
 kadaro napken.
 	</h3></div>
@@ -389,8 +403,8 @@ longues années.
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('kr','en')" class="btn btn-lg lang-en" title="Switch between Kanuri and English">en</button>
-		<button onclick="switchlang('kr','fr')" class="btn btn-lg lang-fr" title="Switch between Kanuri and Swahili">fr</button>
+		<button onclick="switchlang('kr,en','en,pcm,kr')" class="btn btn-lg lang-primary" title="Switch between Kanuri and English">en</button>
+		<button onclick="switchlang('kr,pcm','en,pcm,kr')" class="btn btn-lg lang-secondary" title="Switch between Kanuri and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 

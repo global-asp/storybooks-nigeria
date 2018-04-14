@@ -56,12 +56,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Cuisiner</span>
-<span class="en">Cooking</span>
-<span class="fr">Cuisiner</span>
+			<span class="l1"></span>
+			<span class="l2"></span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/fr/0067/mp3/01.mp3"></audio>
+				<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+				<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by" width="38px"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
@@ -70,14 +72,16 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-nigeria/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-nigeria/stories/fr">French</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-nigeria/stories/fr/level1">Level 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0067/0067.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0067/fr-0067_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je pèle les pommes de terre.
 	</h3></div>
 
@@ -95,8 +99,8 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -105,7 +109,8 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je hache un chou.
 	</h3></div>
 
@@ -123,8 +128,8 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -133,7 +138,8 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je râpe les carottes.
 	</h3></div>
 
@@ -151,8 +157,8 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -161,7 +167,8 @@
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je lave les fèves.
 	</h3></div>
 
@@ -179,8 +186,8 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -189,7 +196,8 @@
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je coupe la courge musquée.
 	</h3></div>
 
@@ -207,8 +215,8 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -217,7 +225,8 @@
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Je hache les épinards.
 	</h3></div>
 
@@ -235,8 +244,8 @@
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -245,7 +254,8 @@
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Ma mère hache les oignons.
 	</h3></div>
 
@@ -264,8 +274,8 @@ onions.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -274,7 +284,8 @@ onions.
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Les oignons me font pleurer quand ils sont hachés.
 	</h3></div>
 
@@ -293,8 +304,8 @@ when they are chopped.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and Swahili">fr</button>
+		<button onclick="switchlang('fr,en','en,pcm,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,pcm','en,pcm,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 

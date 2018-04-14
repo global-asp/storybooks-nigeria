@@ -56,12 +56,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Ay Kaayi Banaaney</span>
-<span class="en">Grandma's bananas</span>
-<span class="fr">Les bananes de grand-mère</span>
+			<span class="l1"></span>
+			<span class="l2"></span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/dje/0294/mp3/01.mp3"></audio>
+				<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+				<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by" width="38px"></span> Ursula Nafula</h3>
@@ -69,14 +71,16 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-nigeria/css/global.svg" alt="Translated by" width="38px"></span> Plan Niger - Projet NECS - Usaid</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-nigeria/stories/dje">Zarma</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-nigeria/stories/dje/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/dje/0294/0294.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/dje/0294/dje-0294_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Ay kaayi kalo ga beejandi. A ga to no nda haamo, hayni nda logo. Amma wo kaŋ ga hanse ga kaanu boro se ga ti banaaney. Ba kaŋ ay kaayi gonda haama boobo, ay ga bay kaŋ ay no a ga hanse ba gumo. A ga cin ga ay ce nga fuwo ra. A ga nga sirri kayna yaŋ ci ay se. Amma a gonda afo kaŋ a ga wanji ay se: nango kaŋ a ga banaaney funbandi.
 	</h3></div>
 
@@ -112,8 +116,8 @@ faisait murir les bananes.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -122,7 +126,8 @@ faisait murir les bananes.
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Han fo ay di kondo bambata fo go wayna ra, ay kaayi fuwo mayo ga. Kaŋ ay na hã hari kaŋ a ga te nda, a na me ka ga ne: "Ay maamaaci konda no." Konda jare ga gonda banaana kopto boobo kaŋ ay kaayi ga cin ga bare-bare. A mo ga sootiya gumo. Ay na a hã: "Ay kaayi, ifo ga ci banaana koptey wo nafa?" A ye ga ne ay se: "Ay maamaaci banana koptey no."
 	</h3></div>
 
@@ -155,8 +160,8 @@ magiques. »
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -165,7 +170,8 @@ magiques. »
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Ay kaayi, banaaney, banaana koptey nda kondo beero gunayaŋ ga beejandi. Amma ay kaayi na ay donton, ay ma koy ga hari ceeci ay ɲa do. "Baani ay kaayi, naŋ ay ma di hari kaŋ ni go ga te" Kayo ne a se: "Naŋ hanga-sanday kocciyo, te day wo kaŋ ay ci ni se" ay zuru ga koy dontono do.
 	</h3></div>
 
@@ -196,8 +202,8 @@ partis donc en courant.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -206,7 +212,8 @@ partis donc en courant.
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Kaŋ ay ye ga ka, ay na ay kaayi gar taray a go ga goro, amma konda si no, banaaney mo si no. Ay ne a se: "Ay kaayi, man ga konda?man ga banaaney kulu? Nda" A ye ga ne ay se: "Ay na i tugu" Ay bina kulu sara.
 	</h3></div>
 
@@ -235,8 +242,8 @@ magique. » J'étais très déçue.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -245,7 +252,8 @@ magique. » J'étais très déçue.
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Jirbi hinka banda, ay kaayi ne ay ma koy nga fuwo ra ga kande nga se nga goobo. Za ay na fuwo feeri no banaana ninante haw na ay kubay. Fuwo bindi ra no ay kaayi maamaaci kondo beero go ga gisi. I na a daabu nda zaara zeeno fo. Ay na zaaraa sambu ga haw kaana din ta.
 	</h3></div>
 
@@ -275,8 +283,8 @@ cette odeur extraordinaire.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -285,7 +293,8 @@ cette odeur extraordinaire.
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Kaŋ ay kaayi kuuwa ga ne: "Ifo no ni go ga te waasi ga kande ay se ay goobo", kala ay sar. Ay waasi ga fatta nda goobo. Ay kaayi ne ay se: "Ifo no go ga ni haarandi?" A hããyaŋo no naŋ ay bay kaŋ a maamaaci nango diiyaŋo no naŋ ay go ga mumusu.
 	</h3></div>
 
@@ -317,8 +326,8 @@ de son lieu magique.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -327,7 +336,8 @@ de son lieu magique.
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	A suba, waati kaŋay kaayi ka ga faajikaaray ay ɲa se, ay zuru ga koy a kwaara ga di a banaaney koyne. Iboobo go no kaŋnin i ra. Ay na afo sambu ga tugu ay kwaayo ra. Ay na konda daabu ga zuru ga koy fuwo banda ga a ŋwa waasi-waasi. Banaanayzo din kaanu nda banaana kulu kaŋ ay bay ga ŋwa.
 	</h3></div>
 
@@ -358,8 +368,8 @@ douce que je n'avais jamais goûtée.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -368,7 +378,8 @@ douce que je n'avais jamais goûtée.
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	A suba, waati kaŋ ay kaayi go ga nga kopto kosu kalo ra, ay zuru ga koy fuwo ra ga banaaney guna. I baayaŋo kulu no nin. Ay mana hin ga ay boŋ gaayi, ay na taaci sambu. A go ga deebe-deebe ga fatta, kala ay ma ay kaayi kotoyaŋ taray. Ay na ay banaaney tugu ay kwaayo rag a ka ga bisa a jine.
 	</h3></div>
 
@@ -403,8 +414,8 @@ m'éloignant.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -413,7 +424,8 @@ m'éloignant.
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	A suba no ga ci habo zaaro. Ay kaayi tun za nda hinay. Waati kulu loogo nda banaana niney no a ga koy ga neera habu. Hano din hane, ay mana waasi ga koy ga faajikaaray a se. Amma mate kulu kaŋ te, a si gay kaŋ a ga bay ay ga.
 	</h3></div>
 
@@ -442,8 +454,8 @@ l'éviter bien longtemps.
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -452,7 +464,8 @@ l'éviter bien longtemps.
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	Cino ra, ay ɲa nda ay baaba nda ay kaayi na ay ce. Ay bay hari kaŋse no. Cino din, kaŋ ay jirbi, ay na zaytaray haram. Ay si ye ga kaayi, wala ay ɲa wala ay baaba zay sanku fa boro waani fo.
 	</h3></div>
 
@@ -478,8 +491,8 @@ soit d'autres.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('dje','en')" class="btn btn-lg lang-en" title="Switch between Zarma and English">en</button>
-		<button onclick="switchlang('dje','fr')" class="btn btn-lg lang-fr" title="Switch between Zarma and Swahili">fr</button>
+		<button onclick="switchlang('dje,en','en,pcm,dje')" class="btn btn-lg lang-primary" title="Switch between Zarma and English">en</button>
+		<button onclick="switchlang('dje,pcm','en,pcm,dje')" class="btn btn-lg lang-secondary" title="Switch between Zarma and Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
