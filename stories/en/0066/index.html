@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png">
-	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest">
-	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/storybooks-nigeria/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/storybooks-nigeria/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>Nozibele and the three hairs - Storybooks Nigeria</title>
 	<meta name="description" content="Storybooks Nigeria is designed specifically for teachers and makes 40 stories from the African Storybook available in English and Nigerian Pidgin, as well as all the major regional and immigrant languages of Nigeria (with text and audio in English, Nigerian Pidgin, Yoruba, Igbo, French, Arabic, Spanish, Portuguese, and others).
 ">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-nigeria/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-nigeria/stories/en/0066/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Nigeria" href="/storybooks-nigeria">
-	<script src="/storybooks-nigeria/js/sbc.js"></script>
+	<script src="/storybooks-nigeria/js/sbc.min.js"></script>
 </head>
 
   <body>
@@ -46,13 +47,13 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
 		<option value="/storybooks-nigeria/stories/en/0066">English</option>
-		<option value="/storybooks-nigeria/stories/pcm/0066">Nigerian Pidgin English</option>
+		<option value="/storybooks-nigeria/stories/pcm/0066">Nigerian Pidgin</option>
 		<option value="/storybooks-nigeria/stories/ar/0066">Arabic</option>
 		<option value="/storybooks-nigeria/stories/fr/0066">French</option>
 		<option value="/storybooks-nigeria/stories/ff/0066">Fulfulde</option>
@@ -76,24 +77,25 @@
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/01.mp3"></audio>
-			<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-			<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+			<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+			<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Tessa Welch</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-nigeria/css/megaphone.svg" alt="Read by"></span> Darshan Soni</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/en">English</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/en/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/en/0066/en-0066_nozibele.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Tessa Welch</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/megaphone.svg" alt="Read by"></span> Darshan Soni</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/en">English</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/en/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/en/0066/en-0066_nozibele.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	A long time ago, three girls went
 out to collect wood.
 	</h3></div>
@@ -109,12 +111,12 @@ out to collect wood.
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://globalstorybooks.net/media/audio/en/0066/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -124,7 +126,6 @@ out to collect wood.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	It was a hot day so they went down
 to the river to swim.
 They played and splashed and
@@ -144,12 +145,12 @@ swam in the water.
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://globalstorybooks.net/media/audio/en/0066/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -159,7 +160,6 @@ swam in the water.
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	Suddenly, they realised that it was
 late.
 They hurried back to the village.
@@ -177,12 +177,12 @@ They hurried back to the village.
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://globalstorybooks.net/media/audio/en/0066/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -192,7 +192,6 @@ They hurried back to the village.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	When they were nearly home,
 Nozibele put her hand to her neck.
 She had forgotten her necklace!
@@ -216,12 +215,12 @@ But her friends said it was too late.
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://globalstorybooks.net/media/audio/en/0066/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -231,7 +230,6 @@ But her friends said it was too late.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	So Nozibele went back to the river
 alone.
 She found her necklace and hurried
@@ -253,12 +251,12 @@ But she got lost in the dark.
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://globalstorybooks.net/media/audio/en/0066/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -268,7 +266,6 @@ But she got lost in the dark.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	In the distance she saw light
 coming from a hut.
 She hurried towards it and knocked
@@ -288,12 +285,12 @@ at the door.
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://globalstorybooks.net/media/audio/en/0066/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -303,7 +300,6 @@ at the door.
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	To her surprise, a dog opened the
 door and said, “What do you want?”
 “I’m lost and I need a place to
@@ -329,12 +325,12 @@ So Nozibele went in.
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://globalstorybooks.net/media/audio/en/0066/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -344,7 +340,6 @@ So Nozibele went in.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	Then the dog said, “Cook for me!”
 “But I’ve never cooked for a dog
 before,” she answered.
@@ -368,12 +363,12 @@ the dog.
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://globalstorybooks.net/media/audio/en/0066/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -383,7 +378,6 @@ the dog.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	Then the dog said, “Make the bed
 for me!”
 Nozibele answered, “I’ve never
@@ -409,12 +403,12 @@ So Nozibele made the bed.
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://globalstorybooks.net/media/audio/en/0066/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -424,7 +418,6 @@ So Nozibele made the bed.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	Every day she had to cook and
 sweep and wash for the dog.
 Then one day the dog said,
@@ -450,12 +443,12 @@ before I come back.”
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://globalstorybooks.net/media/audio/en/0066/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -465,7 +458,6 @@ before I come back.”
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	As soon as the dog had gone,
 Nozibele took three hairs from her
 head.
@@ -493,12 +485,12 @@ could.
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/12.mp3"></audio>
+		<audio id="audio12" src="https://globalstorybooks.net/media/audio/en/0066/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -508,7 +500,6 @@ could.
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	When the dog came back, he looked
 for Nozibele.
 “Nozibele, where are you?” he
@@ -540,12 +531,12 @@ third hair.
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" onended="resetbutton('13')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/13.mp3"></audio>
+		<audio id="audio13" src="https://globalstorybooks.net/media/audio/en/0066/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -555,7 +546,6 @@ third hair.
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	Then the dog knew that Nozibele
 had tricked him.
 So he ran and ran all the way to the
@@ -583,26 +573,27 @@ has never been seen since.
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" onended="resetbutton('14')" src="https://globalstorybooks.net/media/audio/en/0066/mp3/14.mp3"></audio>
+		<audio id="audio14" src="https://globalstorybooks.net/media/audio/en/0066/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
-		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch between English and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('en,en','en,pcm,en')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('en,pcm','en,pcm,en')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Tessa Welch</h5>
-		<h5>Illustrated by: Wiehan de Jager</h5>
-		<h5>Read by: Darshan Soni</h5>
-		<h5>Language: <a href="/storybooks-nigeria/stories/en">English</a></h5>
-		<h5><a href="/storybooks-nigeria/stories/en/level3">Level 3</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=1880" target="_blank">Nozibele and the three hairs</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Tessa Welch</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Read by:</span> Darshan Soni</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-nigeria/stories/en">English</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-nigeria/stories/en/level3">Level 3</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=1880" target="_blank">Nozibele and the three hairs</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
@@ -620,9 +611,10 @@ has never been seen since.
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-nigeria/stories/en" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-nigeria/stories/en" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
+
 
     </div>
 

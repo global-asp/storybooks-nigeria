@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png">
-	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest">
-	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/storybooks-nigeria/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/storybooks-nigeria/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>Tingi and cows - Storybooks Nigeria</title>
 	<meta name="description" content="Storybooks Nigeria is designed specifically for teachers and makes 40 stories from the African Storybook available in English and Nigerian Pidgin, as well as all the major regional and immigrant languages of Nigeria (with text and audio in English, Nigerian Pidgin, Yoruba, Igbo, French, Arabic, Spanish, Portuguese, and others).
 ">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-nigeria/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-nigeria/stories/pcm/0210/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Nigeria" href="/storybooks-nigeria">
-	<script src="/storybooks-nigeria/js/sbc.js"></script>
+	<script src="/storybooks-nigeria/js/sbc.min.js"></script>
 </head>
 
   <body>
@@ -46,13 +47,13 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
 		<option value="/storybooks-nigeria/stories/en/0210">English</option>
-		<option value="/storybooks-nigeria/stories/pcm/0210">Nigerian Pidgin English</option>
+		<option value="/storybooks-nigeria/stories/pcm/0210">Nigerian Pidgin</option>
 		<option value="/storybooks-nigeria/stories/ar/0210">Arabic</option>
 		<option value="/storybooks-nigeria/stories/fr/0210">French</option>
 		<option value="/storybooks-nigeria/stories/ff/0210">Fulfulde</option>
@@ -74,26 +75,25 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/01.mp3"></audio>
-			<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-			<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+			<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Ingrid Schechter</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Ingrid Schechter</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-nigeria/css/global.svg" alt="Translated by"></span> Anthonia Ujene</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/pcm">Nigerian Pidgin</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/pcm/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/pcm/0210/pcm-0210_tingi.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Ingrid Schechter</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Ingrid Schechter</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/global.svg" alt="Translated by"></span> Anthonia Ujene</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/pcm">Nigerian Pidgin</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/pcm/level2">Level 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">The audio for this story is currently not available.</span></h3>
+
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Tingi de stay with grandma.
 	</h3></div>
 
@@ -108,12 +108,11 @@ grandmother.
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/02.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -123,7 +122,6 @@ grandmother.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	E dey take care of d cow with her.
 	</h3></div>
 
@@ -138,12 +136,11 @@ the cows with her.
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/03.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -153,7 +150,6 @@ the cows with her.
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	One day soldiers come.
 	</h3></div>
 
@@ -168,12 +164,11 @@ came.
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/04.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -183,7 +178,6 @@ came.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Dem come carry the cows go.
 	</h3></div>
 
@@ -198,12 +192,11 @@ away.
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/05.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -213,7 +206,6 @@ away.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Tingi and em grandma run come hide.
 	</h3></div>
 
@@ -229,12 +221,11 @@ and hid.
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/06.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -244,7 +235,6 @@ and hid.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Dem hide for bush till night come.
 	</h3></div>
 
@@ -259,12 +249,11 @@ until night.
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/07.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -274,7 +263,6 @@ until night.
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	The soldiers den come back.
 	</h3></div>
 
@@ -289,12 +277,11 @@ came back.
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/08.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -304,7 +291,6 @@ came back.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Grandma come hide Tingi under leaves.
 	</h3></div>
 
@@ -319,12 +305,11 @@ under the leaves.
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/09.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -334,7 +319,6 @@ under the leaves.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	One soldiers carry leg on top am, e no shake at all.
 	</h3></div>
 
@@ -350,12 +334,11 @@ but he kept quiet.
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/10.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -365,7 +348,6 @@ but he kept quiet.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Wen dem don go, Tingi and em grandma come out.
 	</h3></div>
 
@@ -381,12 +363,11 @@ came out.
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/11.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
@@ -396,7 +377,6 @@ came out.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-
 	Dem creep go house small small.
 	</h3></div>
 
@@ -411,26 +391,26 @@ quietly.
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/pcm/0210/mp3/12.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch between Nigerian Pidgin and English">en</button>
-		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch between Nigerian Pidgin and Nigerian Pidgin">pcm</button>
+		<button onclick="switchlang('pcm,en','en,pcm,pcm')" class="btn btn-lg lang-primary" title="Switch to English">en</button>
+		<button onclick="switchlang('pcm,pcm','en,pcm,pcm')" class="btn btn-lg lang-secondary" title="Switch to Nigerian Pidgin">pcm</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Ingrid Schechter</h5>
-		<h5>Illustrated by: Ingrid Schechter</h5>
-		<h5>Translated by: Anthonia Ujene</h5>
-		<h5>Language: <a href="/storybooks-nigeria/stories/pcm">Nigerian Pidgin</a></h5>
-		<h5><a href="/storybooks-nigeria/stories/pcm/level2">Level 2</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=7441" target="_blank">Tingi and the Cows</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Ingrid Schechter</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Ingrid Schechter</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Anthonia Ujene</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-nigeria/stories/pcm">Nigerian Pidgin</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-nigeria/stories/pcm/level2">Level 2</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=7441" target="_blank">Tingi and the Cows</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
@@ -445,9 +425,10 @@ quietly.
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-nigeria/stories/pcm" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-nigeria/stories/pcm" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
+
 
     </div>
 

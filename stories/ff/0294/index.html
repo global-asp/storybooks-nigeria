@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png">
-	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest">
-	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/storybooks-nigeria/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-nigeria/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-nigeria/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-nigeria/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/storybooks-nigeria/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/storybooks-nigeria/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/storybooks-nigeria/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>Bananaaje maamiyo debbo - Storybooks Nigeria</title>
 	<meta name="description" content="Storybooks Nigeria is designed specifically for teachers and makes 40 stories from the African Storybook available in English and Nigerian Pidgin, as well as all the major regional and immigrant languages of Nigeria (with text and audio in English, Nigerian Pidgin, Yoruba, Igbo, French, Arabic, Spanish, Portuguese, and others).
 ">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-nigeria/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-nigeria/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-nigeria/stories/ff/0294/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Nigeria" href="/storybooks-nigeria">
-	<script src="/storybooks-nigeria/js/sbc.js"></script>
+	<script src="/storybooks-nigeria/js/sbc.min.js"></script>
 </head>
 
   <body>
@@ -46,13 +47,13 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
 		<option value="/storybooks-nigeria/stories/en/0294">English</option>
-		<option value="/storybooks-nigeria/stories/pcm/0294">Nigerian Pidgin English</option>
+		<option value="/storybooks-nigeria/stories/pcm/0294">Nigerian Pidgin</option>
 		<option value="/storybooks-nigeria/stories/ar/0294">Arabic</option>
 		<option value="/storybooks-nigeria/stories/fr/0294">French</option>
 		<option value="/storybooks-nigeria/stories/ff/0294">Fulfulde</option>
@@ -74,26 +75,25 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/01.mp3"></audio>
+			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
 			<button onclick="switchlang('ff,pcm','en,pcm,ff')" class="btn btn-lg lang-secondary" title="Switch between Fula and Nigerian Pidgin">pcm</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Catherine Groenewald</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-nigeria/css/global.svg" alt="Translated by"></span> Plan Niger - Projet NECS - Usaid</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/ff">Fula</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/ff/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ff/0294/ff-0294_grandma.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/art.svg" alt="Illustrated by"></span> Catherine Groenewald</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/global.svg" alt="Translated by"></span> Plan Niger - Projet NECS - Usaid</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/language.svg" alt="Language"></span> <a href="/storybooks-nigeria/stories/ff">Fula</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/level.svg" alt="Level"></span> <a href="/storybooks-nigeria/stories/ff/level4">Level 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/storybooks-nigeria/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">The audio for this story is currently not available.</span></h3>
+
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Kowgol maamiyo debbo no beeginiingol heewu mbayeeri, gawri e
 roogo. Ammaa ko ɓuri beegiinaade
 woni bananaaje ɗen.
@@ -118,14 +118,13 @@ Although Grandma had many grandchildren, I secretly knew that I was her favourit
 But there was one secret she did not share with me: where she ripened bananas.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/02.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -139,7 +138,6 @@ But there was one secret she did not share with me: where she ripened bananas.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Nyannde gooɗom, nji’u- mi kilaal
 mawngal goodungal huɗo no resii
 ley naange dammbugal ɓaade
@@ -162,14 +160,13 @@ dow nootannde, o wi’i kam:
 Next to the basket, there were several banana leaves that Grandma turned from time to time. I was curious. “What are the leaves for, Grandma?” I asked. The only answer I got was, “They are my magic leaves.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/03.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -183,7 +180,6 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Iɗum wawnii daarol maamiyo
 debbo, bananaaje ɗen, kaakooli
 bananaahi ɗin e kilaal mawngal
@@ -206,14 +202,13 @@ dagga.
 “Don’t be stubborn, child, do as you are told,” she insisted. I took off running.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/04.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -227,7 +222,6 @@ dagga.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Ko ngartu-mi, tawumi maama no
 jooɗii yaasn, ammaa nii kilaal ngal
 e bananaaje ɗen fuu ngalaa ɗon.
@@ -246,14 +240,13 @@ sirri.» Ɗum metti kam sanne.
 But the only answer I got was, “They are in my magic place.” It was so disappointing!
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/05.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -267,7 +260,6 @@ But the only answer I got was, “They are in my magic place.” It was so disap
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Balɗe ɗiɗi gaɗa nden en, maama lili
 kam nder suudu muuɗum mi
 tefanowa mo tuugordu makko.
@@ -287,14 +279,13 @@ sanne ngool.
 As soon as I opened the door, I was welcomed by the strong smell of ripening bananas. In the inner room was grandma’s big magic straw basket. It was well hidden by an old blanket. I lifted it and sniffed that glorious smell.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/06.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -308,7 +299,6 @@ As soon as I opened the door, I was welcomed by the strong smell of ripening ban
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Sawto daande maama juwi kam nde
 o noddunoo, «ɗume ngonu-ɗaa aɗa
 waɗa?
@@ -329,14 +319,13 @@ I hurried out with her walking stick. “What are you smiling about?” Grandma 
 Her question made me realise that I was still smiling at the discovery of her magic place.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/07.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -350,7 +339,6 @@ Her question made me realise that I was still smiling at the discovery of her ma
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Jaangoore muudum ko maama wari
 juuraade inna, karii-mi naatoy-mi
 suudu makko faa mi daara
@@ -371,14 +359,13 @@ muuɗum baa nde wo’otere.
 There was a bunch of very ripe ones. I picked one and hid it in my dress. After covering the basket again, I went behind the house and quickly ate it. It was the sweetest banana I had ever tasted.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/08.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -392,7 +379,6 @@ There was a bunch of very ripe ones. I picked one and hid it in my dress. After 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Jaangoore muuɗum, wakkati
 maama tawanoo nder koowgol imo
 teɓta li’orkoy, molii-mi naatu-mi
@@ -418,14 +404,13 @@ Nearly all were ripe. I couldn’t help taking a bunch of four.
 As I tiptoed towards the door, I heard grandma coughing outside. I just managed to hide the bananas under my dress and walked past her.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/09.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -439,7 +424,6 @@ As I tiptoed towards the door, I heard grandma coughing outside. I just managed 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Jahngoore muuɗum woni
 nyallaande luumo.
 Maama fini gilla hejjere. Roogo e
@@ -456,14 +440,13 @@ mo fufuu.
 I did not hurry to visit her that day. But I could not avoid her for long.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/10.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -477,7 +460,6 @@ I did not hurry to visit her that day. But I could not avoid her for long.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-
 	Laasara muuɗum daa, inna am,
 abba am e maama noddi kam. Miɗo
 anndi ngam ɗume non.
@@ -494,14 +476,13 @@ duu.
 That night as I lay down to sleep, I knew I could never steal again, not from grandma, not from my parents, and certainly not from anyone else.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
-
+	
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/ff/0294/mp3/11.mp3"></audio>
-		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
+		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ff,en','en,pcm,ff')" class="btn btn-lg lang-primary" title="Switch between Fula and English">en</button>
@@ -512,14 +493,15 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Ursula Nafula</h5>
-		<h5>Illustrated by: Catherine Groenewald</h5>
-		<h5>Translated by: Plan Niger - Projet NECS - Usaid</h5>
-		<h5>Language: <a href="/storybooks-nigeria/stories/ff">Fula</a></h5>
-		<h5><a href="/storybooks-nigeria/stories/ff/level4">Level 4</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=2094" target="_blank">Grandma's bananas</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Ursula Nafula</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Catherine Groenewald</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Plan Niger - Projet NECS - Usaid</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-nigeria/stories/ff">Fula</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-nigeria/stories/ff/level4">Level 4</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=2094" target="_blank">Grandma's bananas</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
@@ -531,9 +513,10 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-nigeria/stories/ff" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-nigeria/stories/ff" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
+
 
     </div>
 
